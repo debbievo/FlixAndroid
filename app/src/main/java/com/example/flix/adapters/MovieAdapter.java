@@ -82,6 +82,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ViewHolder> 
                 imageURL = movie.getPosterPath();
             }
 
+           // Glide.with(context).load(movie.getPosterPath()).apply(RequestOptions.bitmapTransform(new RoundedCorners(14))).into(ivPoster);
             Glide.with(context).load(movie.getPosterPath()).into(ivPoster);
 
             //register click listener on whole row
